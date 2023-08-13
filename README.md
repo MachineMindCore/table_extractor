@@ -20,6 +20,7 @@ git clone https://github.com/MachineMindCore/table_extractor
 
 Luego instale los requisitos:
 ```
+cd table_extractor/
 pip install -r requirements.txt
 ```
 
