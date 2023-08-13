@@ -18,7 +18,12 @@ Para instalar el paquete primero obtenga el repositorio:
 git clone https://github.com/MachineMindCore/table_extractor
 ```
 
-Luego instale el paquete:
+Luego instale los requisitos:
+```
+pip install -r requirements.txt
+```
+
+Finalmente instale el paquete:
 ```bash
 pip install -e .
 ```
