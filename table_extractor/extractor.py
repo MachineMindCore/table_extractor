@@ -86,7 +86,8 @@ class TableExtractor:
         url -> URL de la pagina web
         """
         content = self.extract_html(url)
-        dataframes = read_html(str(content.table))
-        
+        tables = content.find_all('table')
+        dataframes = read_html(str(tables))
+
         return dataframes
         

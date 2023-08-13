@@ -21,4 +21,6 @@ def make_dir(base: str, dir: str):
     base -> Direccion base del directorio a crear
     dir -> Nombre del directorio nuevo
     """
-    os.mkdir(f'{base}/{dir}')
+    name = f'{base}/{dir}'
+    if not os.path.exists(name):
+        os.mkdir(name)

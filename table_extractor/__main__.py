@@ -1,8 +1,8 @@
-from arguments import make_arguments
-from extractor import TableExtractor
-from helpers import get_last_directory, make_dir
+from table_extractor.arguments import make_arguments
+from table_extractor.extractor import TableExtractor
+from table_extractor.helpers import get_last_directory, make_dir
 
-if __name__ == '__main__':
+def main():
     # Generar el parser de los argumentos
     parser = make_arguments()
 
@@ -28,3 +28,6 @@ if __name__ == '__main__':
         if args.format[0] == 'xlsx':
             dataframe.to_excel(f'{base}/{directory_name}/table_{i}.xlsx', index=False)
     print('saved in', f'{base}/{directory_name}')
+
+if __name__ == '__main__':
+    main()

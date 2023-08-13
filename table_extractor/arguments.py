@@ -32,7 +32,7 @@ def make_arguments() -> ArgumentParser:
     parser.add_argument(
         '--format',
         nargs = 1,
-        default = DEFAULT_FORMAT,
+        default = [DEFAULT_FORMAT],
         type = str,
         choices = ['csv', 'xlsx'],
         required = False,
@@ -42,7 +42,7 @@ def make_arguments() -> ArgumentParser:
     parser.add_argument(
         '--path',
         nargs = 1,
-        default = DEFAULT_PATH,
+        default = [DEFAULT_PATH],
         type = str,
         required = False,
     )
